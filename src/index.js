@@ -10,4 +10,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(<div></div>, document.getElementById("root"));
+const name = "Ed";
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+
+ReactDOM.render(
+  <div>
+    <p>Created by {name}</p>
+    <p>Copiright {year}</p>
+  </div>,
+  document.getElementById("root")
+);
